@@ -26,13 +26,24 @@ module.exports = async (user, mailType, admin) => {
     let mailOptions, emailContent;
     if (mailType === "afterreset") {
       emailContent = `<div>
-        <h1>Hello ${user.name}</h1>
-         <p> Password Reset successfull</p>
-          <p> If it's not you , Contact Admin</p>
-          <p> Admin Details </p>
-          <p>Name : ${admin.name} </p>
-          <p>E-mail ${admin.email} </p>
-        </div>`;
+      <h2 style="color:orange;" >MSC <span style="color:grey;" > | Motorcycle Servicing Company .</span> <h2> 
+      
+      <h2 style="color:grey;font-size:15px;">Hello <span style="color:orange;font-size:17px;">${user.name}</span></h2>
+
+         <h4 style="color:grey;font-size:20px;" > Password Reset successfull</h4>
+          <p style="color:red;font-size:15px;"> If it's not you , Contact Admin</p>
+          <p style="color:grey;font-size:15px;"> Admin Details : </p>
+          <p style="color:grey;font-size:15px;">Name : <span style="color:orange;font-size:16px;" > ${admin.name}</span> </p>
+          <p style="color:grey;font-size:15px;">E-mail <span style="color:orange;font-size:16px;" > ${admin.email} </span></p>
+          <br />
+          
+          <br />
+          <br />
+          <br />
+          <br />
+         
+          <span style="color:grey;font-size:10px;" > © Copyright 2022 - Motorycle Servicing Company All Rights Reserved.</span>
+          </div>`;
 
       mailOptions = {
         from: process.env.EMAIL,
@@ -42,12 +53,22 @@ module.exports = async (user, mailType, admin) => {
       };
     } else if (mailType === "message") {
       emailContent = `<div>
-      <h2> Details of the user/viewer </h2>
-        <h3>Name : ${user.name}</h3>
-          <h3>E-mail : ${user.email} </h3>
-          <h3>Phone Number : ${user.phoneNumber} </h3>
-          <h3>Message : ${user.message} </h3>
-        </div>`;
+      <h2 style="color:orange;" >MSC <span style="color:grey;" > | Motorcycle Servicing Company .</span> <h2> 
+      <br />
+      <h2 style="color:grey;"> Details of the user/viewer </h2>
+        <h3 style="color:grey;font-size:15px;">Name :  <span style="color:orange;font-size:16px;" >${user.name}</span> </h3>
+          <h3 style="color:grey;font-size:15px;">E-mail :  <span style="color:orange;font-size:16px;" >${user.email} </span> </h3>
+          <h3 style="color:grey;font-size:15px;">Phone Number :  <span style="color:orange;font-size:16px;" >${user.phoneNumber}</span>  </h3>
+          <h3 style="color:grey;font-size:15px;">Message :  <span style="color:orange;font-size:16px;" >${user.message} </span> </h3>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+         
+          <span style="color:grey;font-size:10px;" > © Copyright 2022 - Motorycle Servicing Company All Rights Reserved.</span>
+          </div>`;
 
       mailOptions = {
         from: process.env.EMAIL,
@@ -56,7 +77,22 @@ module.exports = async (user, mailType, admin) => {
         html: emailContent,
       };
     } else {
-      emailContent = `<div><h1>Please click on the below link to reset your password</h1> <a href="https://effulgent-donut-d412c4.netlify.app/resetpassword/${encryptedToken}">${encryptedToken}</a> </div>`;
+      emailContent = `<div>
+      <h2 style="color:orange;" >MSC <span style="color:grey;" > | Motorcycle Servicing Company .</span> <h2> 
+      <br />
+      <a  href="https://effulgent-donut-d412c4.netlify.app/resetpassword/${encryptedToken}"><span style="color:grey;font-size:15px;" >Click here to Reset Password</span></a> 
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+     
+      <span style="color:grey;font-size:10px;" > © Copyright 2022 - Motorycle Servicing Company All Rights Reserved.</span>
+      </div>`;
 
       mailOptions = {
         from: process.env.EMAIL,

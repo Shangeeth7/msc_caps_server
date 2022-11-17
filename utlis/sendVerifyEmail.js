@@ -25,12 +25,22 @@ module.exports = async (user, mailType) => {
     await token.save();
     let mailOptions, emailContent;
     if (mailType === "verifyemail") {
-      emailContent = `<div>
-
-      <h2 style="color:orange;">MSC <span style="color:grey;" > | Motorcycle Serviving Company .</span> <h2> 
-      <h3>E-mail Verification </h3>
-       <a href="https://effulgent-donut-d412c4.netlify.app/verifyemail/${encryptedToken}">click here to verify</a>  
-       </div>`;
+      emailContent = `<div >
+      <h2 style="color:orange;" >MSC <span style="color:grey;" > | Motorcycle Servicing Company .</span> <h2> 
+     <br />
+      <a  href="https://effulgent-donut-d412c4.netlify.app/verifyemail/${encryptedToken}"><span style="color:grey;font-size:15px;" >Click here to Verify  e-mail</span></a> 
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+     
+      <span style="color:grey;font-size:10px;" > © Copyright 2022 - Motorycle Servicing Company All Rights Reserved.</span>
+      </div>`;
 
       mailOptions = {
         from: process.env.EMAIL,
@@ -39,9 +49,23 @@ module.exports = async (user, mailType) => {
         html: emailContent,
       };
     } else {
-      emailContent = `<div><h2>Hello ${user.name}</h2>
-      <p> Welcome to Motorcycle Servicing Company
+      emailContent = `<div >
+      <h2 style="color:orange;" >MSC <span style="color:grey;" > | Motorcycle Servicing Company .</span> <h2> 
+     <br />
+      <h2 style="color:grey;font-size:15px;">Hello <span style="color:orange;font-size:17px;">${user.name}</span></h2>
+      <p style="color:grey;font-size:15px;"> Welcome to Motorcycle Servicing Company
       </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+     
+      <span style="color:grey;font-size:10px;" > © Copyright 2022 - Motorycle Servicing Company All Rights Reserved.</span>
       </div>`;
 
       mailOptions = {

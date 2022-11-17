@@ -22,7 +22,7 @@ app.get("/", (req, res) =>
   res.send(` 
 <div style="padding-left:20px;height:100vh;max-width:200vh;background-image: url('https://silodrome.com/wp-content/uploads/2014/08/Honda-Custom-Motorcycle-3.jpg');background-repeat: no-repeat; ">
 <div style="padding-top:50px;">
-<h2 style="color:white;">Hey it's the Backend Server for <span style="color:orange;" >Motorcycle Serviving Company | MSC .</span> <h2>   <br />
+<h2 style="color:white;">Hey it's the Backend Server for <span style="color:orange;" >Motorcycle Servicing Company | MSC .</span> <h2>   <br />
 <a href="https://effulgent-donut-d412c4.netlify.app" style="color:white;"> Click here for <span style="color:orange;padding-left:5px;" >  MSC - Frontend Server.</span> </a>
 </div>
 </div>
