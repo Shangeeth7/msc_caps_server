@@ -25,7 +25,7 @@ module.exports = async (user, mailType) => {
     await token.save();
     let mailOptions, emailContent;
     if (mailType === "verifyemail") {
-      emailContent = `<div><h1>Please click on the below link to verify your email address</h1> <a href="http://localhost:3000/verifyemail/${encryptedToken}">${encryptedToken}</a>  </div>`;
+      emailContent = `<div><h1>Please click on the below link to verify your email address</h1> <a href="https://effulgent-donut-d412c4.netlify.app/verifyemail/${encryptedToken}">${encryptedToken}</a>  </div>`;
 
       mailOptions = {
         from: process.env.EMAIL,
