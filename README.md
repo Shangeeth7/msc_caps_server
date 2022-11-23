@@ -16,7 +16,7 @@ Web Application for Booking Motorcycle Service - Online
 
 1. Here you can apply for a mechanic role based on your Experience and motorcycle type. The details will be sent to Admin and he decides to approve or reject your Application.
 2. First you need to register your account as a user and verify your e-mail using a link sent to your e-mail id and when you login you can apply as a Mechanic.
-3. 
+
 
 // Contact us :
 
