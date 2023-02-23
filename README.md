@@ -21,3 +21,33 @@ Web Application for Booking Motorcycle Service - Online
 // Contact us :
 
 1. Even if you are not a user , you can send your queries to admin in get-in-touch page.
+
+
+Admin :
+
+
+email : moto.service.centerr@gmail.com , password : abcd1234
+
+
+Mechanics :
+
+
+email : standardmechanic@gmail.com , password : abcd1234 --->> for standard bike mechanic
+
+
+email : sportsmechanic@gmail.com , password : abcd1234 --->> for sports bike mechanic
+
+
+email : cruisermechanic@gmail.com, password : abcd1234 --->> for cruiser bike mechanic
+
+
+email : gearlessmechanic@gmail.com, password : abcd1234 --->> for scooter/gearless bike mechanic
+
+
+
+User :
+
+
+email : user.1@gmail.com , password : abcd1234 
+
+email : user.2@gmail.com , password : abcd1234
